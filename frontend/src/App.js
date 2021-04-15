@@ -1,10 +1,15 @@
 import React from 'react';
-
+import Header from './components/Header.js'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
-      <h1>Connecticut Cleaning Service</h1>
+    <Header />
+      <main>
+        <h1>Connecticut Cleaning Service</h1>
+      </main>
+    <Footer />
     </>
   );
 }
