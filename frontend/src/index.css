@@ -1,0 +1,71 @@
+body {
+  background: white;
+  color: white;
+}
+
+.navbar {
+  border-bottom: white;
+}
+
+.toggle-icon {
+  color: #24c8ff;
+}
+
+#first-section-body .fas,
+.far {
+  font-size: 60px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#home-section {
+  /* background: url(); */
+  background-color: white;
+  min-height: 500px;
+}
+
+#first-section-head {
+  background: url(./clean-kitchen.jpeg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+/* Dark overlay over image */
+/* #home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+} */
+
+#home-section .home-inner {
+  padding-top: 100px;
+}
+
+#hero-title {
+  color: #222;
+  font-weight: 700;
+  font-family: Arial;
+}
+
+#hero-info {
+  font-weight: 300;
+  color: #222;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #24c8ff;
+  border-color: #24c8ff;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #66d9ff;
+  border-color: #66d9ff;
+}
