@@ -19,6 +19,13 @@ body {
   border-radius: 50%;
 }
 
+.social-icons {
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
 #home-section {
   /* background: url(); */
   background-color: white;
@@ -44,7 +51,7 @@ body {
 } */
 
 #home-section .home-inner {
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 #hero-title {
@@ -164,4 +171,28 @@ body {
 
 .spaced {
   white-space: pre-line;
+}
+
+.footer {
+  background-color: #002f3d;
+}
+
+a.social-links {
+  text-decoration: none;
+  padding-bottom: 0.3em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(33, 33, 33, 0.3);
+  line-height: 2rem;
+  color: white;
+}
+
+a.i.social-links:hover {
+  text-decoration: none;
+  padding-bottom: 0.3em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(33, 33, 33, 0.3);
+  line-height: 2rem;
+  color: black;
 }

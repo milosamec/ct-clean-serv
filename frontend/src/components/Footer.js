@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const Footer = () => {
     let housecleaninginct = `House Cleaning \n Apartment Cleaning \n Move In/Out Cleaning \n Office Cleaning \n Green Cleaning \n Seasonal Cleaning \n Commercial Cleaning \n Construction cleanup`
     return (
-        <footer id="main-footer bg-light">
+        <footer id="main-footer bg-light" class="footer">
            <div class="container">
                 <div class="row">
                    <div class="col-md-3 text-left py-4">
@@ -38,11 +38,9 @@ const Footer = () => {
                    </div>
                    <div class="col-md-3 text-center py-4">
                        <h4>Follow Us</h4>
-                       <div>
-                        <i class="fab fa-yelp"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                       </div>
+                        <a href="https://www.yelp.com/biz/connecticut-cleaning-service-danbury-4" class="social-links" target="_blank"><i class="fab fa-yelp social-icons"></i></a>
+                        <a href="https://www.facebook.com/ConnecticutCleaningService" class="social-links" target="_blank"><i class="fab fa-facebook-f social-icons"></i></a>
+                        <a href="https://www.instagram.com/connecticutcleaningservice" class="social-links" target="_blank"><i class="fab fa-instagram social-icons"></i></a>
                    </div>
                 </div>
                 <div class="row">
