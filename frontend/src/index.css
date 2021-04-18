@@ -69,3 +69,99 @@ body {
   background-color: #66d9ff;
   border-color: #66d9ff;
 }
+
+/* About Team Section */
+
+.links {
+  text-decoration: none;
+  padding-bottom: 0.3em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(33, 33, 33, 0.3);
+  line-height: 2rem;
+  color: #24c8ff;
+}
+
+.links:hover {
+  color: #66d9ff;
+}
+
+.about-team-blue {
+  color: 24c8ff;
+  border-color: #24c8ff;
+}
+
+.blue {
+  color: #24c8ff;
+}
+
+.p-text {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0em;
+  line-height: 1.8em;
+  text-transform: none;
+  color: #222;
+}
+
+.padding-top-0 {
+  padding-top: 0 !important;
+}
+
+.services-section-text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15.25px;
+  letter-spacing: 0.1em;
+  line-height: 1.55em;
+  text-transform: uppercase;
+}
+
+/* Trust Section */
+.h2-title {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.h3-text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15.25px;
+  letter-spacing: 0.1em;
+  line-height: 1.55em;
+  text-transform: uppercase;
+}
+
+#trust-section-head {
+  background: url(./trust-us.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 400px; /* only if you want fixed height */
+}
+
+.image-size-600 {
+  max-height: 600px;
+}
+
+.testimonial-text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 45px;
+  letter-spacing: 0em;
+  line-height: 1.1em;
+  text-transform: none;
+  color: black;
+}
+
+.spaced {
+  white-space: pre-line;
+}
