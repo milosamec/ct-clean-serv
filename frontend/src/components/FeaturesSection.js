@@ -10,18 +10,18 @@ const FeaturesSection = () => {
                     <div class="col-md-6">
                             <div class="d-flex">
                                 <div class="p-2 align-self-start">
-                                    <i class="far fa-sticky-note icon-size"></i>
+                                    <i class="fas fa-clipboard fa-fw"></i>
                                 </div>
-                                <div class="p-2 align-self-end">
+                                <div class="p-2 align-self-end mb-md-5">
                                     <p class="p-text">Flexible Cleaning Plans</p>
                                     <p class="p-text">Our cleaning service rates are competitive and affordable. We guarantee that our service is the best in town and are committed to complete customer satisfaction!</p>                                
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="d-flex">
                                 <div class="p-2 align-self-start">
-                                    <i class="far fa-sticky-note icon-size"></i>
+                                    <i class="fas fa-leaf fa-fw"></i>
                                 </div>
                                 <div class="p-2 align-self-end">
                                     <p class="p-text">Flexible Cleaning Plans</p>
@@ -34,7 +34,7 @@ const FeaturesSection = () => {
                         <div class="col-md-6">
                             <div class="d-flex">
                                 <div class="p-2 align-self-start">
-                                    <i class="far fa-sticky-note icon-size"></i>
+                                    <i class="fas fa-phone-alt fa-fw"></i>
                                 </div>
                                 <div class="p-2 align-self-end">
                                     <p class="p-text">Flexible Cleaning Plans</p>
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
                         <div class="col-md-6">
                             <div class="d-flex">
                                 <div class="p-2 align-self-start">
-                                    <i class="far fa-sticky-note icon-size"></i>
+                                    <i class="fas fa-user-shield fa-fw"></i>
                                 </div>
                                 <div class="p-2 align-self-end">
                                     <p class="p-text">Flexible Cleaning Plans</p>

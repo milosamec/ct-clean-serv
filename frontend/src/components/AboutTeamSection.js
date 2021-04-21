@@ -5,11 +5,11 @@ const AboutTeamSection = () => {
     return (
         <section class="section-about-team bg-white text-muted py-5">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
+                <div class="row">
+                    <div id="img-alignment" class="col-md-6 align-items-right">
                         <img src={placeholder} class="img-fluid rounded mb-3 image-size-600" />
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <p class="about-team-blue fs-2 text blue pb-3"><strong>We understand that house cleaning is a very personal thing.</strong></p>
                         <p class="text-black p-text">That is why our team will do their best not to disappoint you, handling everything according to your specifications and requests. So many people so many tastes, this is why we customize our services to you and to your budget.</p>
                         <p class="text-black p-text">Our company provides you with free in-house consultations.</p>
