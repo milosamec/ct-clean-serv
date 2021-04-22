@@ -255,3 +255,21 @@ a.social-links {
 #services-page-section {
   padding-top: 130px;
 }
+
+#section-testimonials {
+  padding-top: 130px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.testimonial-header-style {
+  padding-left: 5%;
+  display: flex;
+  flex-flow: column;
+  padding-top: 0.5rem;
+}
