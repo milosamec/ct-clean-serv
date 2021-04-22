@@ -35,7 +35,7 @@ const TestimonialsScreen = () => {
                                 <p class="card-text p-text">What can I say these girls are professional, friendly, and thorough. I have absolutely no concerns about leaving them here while I am out. It is such a great feeling to walk around my home after they are gone and see how beautifully they have left it</p>
                                 <div class="d-flex">
                                     <div class="w-50">
-                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span style={{fontSize: "14px", alignSelf: "center" }}>View on google</span></a>
+                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span className="mx-1" style={{fontSize: "14px", alignSelf: "center" }}>View on google</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ const TestimonialsScreen = () => {
                                 <p class="card-text p-text">What can I say these girls are professional, friendly, and thorough. I have absolutely no concerns about leaving them here while I am out. It is such a great feeling to walk around my home after they are gone and see how beautifully they have left it</p>
                                 <div class="d-flex">
                                     <div class="w-50">
-                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span style={{fontSize: "14px", alignSelf: "center"}}>View on google</span></a>
+                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span className="mx-1" style={{fontSize: "14px", alignSelf: "center"}}>View on google</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const TestimonialsScreen = () => {
                                 <p class="card-text p-text">What can I say these girls are professional, friendly, and thorough. I have absolutely no concerns about leaving them here while I am out. It is such a great feeling to walk around my home after they are gone and see how beautifully they have left it</p>
                                 <div class="d-flex">
                                     <div class="w-50">
-                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span style={{fontSize: "14px", alignSelf: "center"}}>View on google</span></a>
+                                        <a href="" class="d-flex links about-team-blue fs-6 text" style={{height: "25px", fontSize: "16px"}}><img src={google} class="img-fluid" /><span className="mx-1" style={{fontSize: "14px", alignSelf: "center"}}>View on google</span></a>
                                     </div>
                                 </div>
                             </div>
