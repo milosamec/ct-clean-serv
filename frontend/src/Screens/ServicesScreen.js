@@ -16,7 +16,7 @@ const ServicesScreen = () => {
                 <div class="row py-5">
                     <div class="d-flex flex-wrap">
                         <div class="col-lg-4 col-md-12 align-self-center">
-                            <img src={housecleaningimg} class="img img-fluid"/>
+                            <img src={housecleaningimg} class="img img-fluid" alt="picture of a clean house"/>
                         </div>
                         <div class="col-lg-8 col-md-12">
                                 <div class="ps-lg-3 pt-3">
@@ -32,7 +32,7 @@ const ServicesScreen = () => {
                 <div class="row py-5">
                     <div class="d-flex flex-wrap">
                         <div class="col-lg-4 col-md-12 align-self-center">
-                            <img src={housecleaningimg} class="img img-fluid"/>
+                            <img src={housecleaningimg} class="img img-fluid" alt="picture of a clean house"/>
                         </div>
                         <div class="col-lg-8 col-md-12">
                                 <div class="ps-lg-3 pt-3">
@@ -48,7 +48,7 @@ const ServicesScreen = () => {
                 <div class="row py-5">
                     <div class="d-flex flex-wrap">
                         <div class="col-lg-4 col-md-12 align-self-center">
-                            <img src={housecleaningimg} class="img img-fluid"/>
+                            <img src={housecleaningimg} class="img img-fluid" alt="picture of a clean house"/>
                         </div>
                         <div class="col-lg-8 col-md-12">
                                 <div class="ps-lg-3 pt-3">
@@ -64,7 +64,7 @@ const ServicesScreen = () => {
                 <div class="row py-5 mb-lg-5">
                     <div class="d-flex flex-wrap">
                         <div class="col-lg-4 col-md-12 align-self-center">
-                            <img src={housecleaningimg} class="img img-fluid"/>
+                            <img src={housecleaningimg} class="img img-fluid" alt="picture of a clean house"/>
                         </div>
                         <div class="col-lg-8 col-md-12">
                                 <div class="ps-lg-3 pt-3">

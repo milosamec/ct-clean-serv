@@ -301,3 +301,11 @@ a.social-links {
   color: rgba(233, 233, 233, 0.3);
   transition: border-color 0.15s ease-out, color 0.15s ease-out;
 }
+
+.testimonials-align-center {
+  text-align: -webkit-center;
+}
+
+.testimonials-align-left {
+  text-align: -webkit-left;
+}
