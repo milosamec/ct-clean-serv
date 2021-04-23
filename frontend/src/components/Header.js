@@ -17,7 +17,6 @@ const Header = () => {
                                     <button class="btn btn-blue">See Our Reviews</button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

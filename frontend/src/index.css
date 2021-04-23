@@ -277,3 +277,18 @@ a.social-links {
   flex-flow: column;
   padding-top: 0.5rem;
 }
+
+.contact-link {
+  text-decoration: none;
+  line-height: 2rem;
+  color: #222;
+  padding-bottom: 0.05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-link:hover {
+  color: rgba(233, 233, 233, 0.3);
+  transition: border-color 0.15s ease-out, color 0.15s ease-out;
+}

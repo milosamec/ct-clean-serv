@@ -20,7 +20,7 @@ const TestimonialsScreen = () => {
     let day = new Date().getUTCDate()
     //
     return (
-        <section id="section-testimonials">
+        <section id="section-testimonials" class="pb-5">
             <h1 class="h2-title text-center mb-5">Google Reviews</h1>
             <div class="container">
                 <div class="row">
@@ -152,7 +152,7 @@ const TestimonialsScreen = () => {
                 </div>
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <h2 id="hero-title" className="h2-title">If you are happy with our service, please take a minute to write a review.</h2>
+                        <h2 id="hero-title" className="h2-title p-3">If you are happy with our service, please take a minute to write a review.</h2>
                     </div>
                 </div>
                 <div class="row d-flex">
@@ -162,7 +162,7 @@ const TestimonialsScreen = () => {
                     <div class="col-sm-4">
                         <a href="" alt="Google Reviews Image"><img className="img img-fluid" src={yelpreviews}></img></a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 ">
                         <a href="" alt="Google Reviews Image"><img className="img img-fluid" src={facebookreviews}></img></a>
                     </div>
                 </div>
