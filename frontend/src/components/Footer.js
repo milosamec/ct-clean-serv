@@ -9,7 +9,7 @@ const Footer = () => {
                    <div class="col-md-3 text-left py-4">
                        <h3 class="h3-footer-title">Connecticut Cleaning Service</h3>
                        <address class="p-text-footer">67 Hospital.ave #B <br/> Danbury, CT 06810, USA</address>
-                       <a href="mail:to" class="text-break p-text footer-link">connecticutcleaningservices@gmail.com</a>
+                       <a href="mailto:connecticutcleaningservices@gmail.com" class="text-break p-text footer-link">connecticutcleaningservices@gmail.com</a>
                        <div class="p-text-footer">Monday / Friday: 7:30 am - 5:00 pm <br/> Saturday: 9:00 am - 3:00 pm</div>
                    </div>
                    <div class="col-md-3 text-left py-4">
