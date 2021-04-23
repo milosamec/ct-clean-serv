@@ -2,20 +2,21 @@ import React from 'react'
 
 const ContactScreen = () => {
     return (
-        <section id="section-contact">
+        <div id="section-contact">
             {/* PAGE HEADER */}
-            <header id="page-header trust-section-head">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 m-auto text-center">
-                            <h1 class="h2-title text-center">Contact Us</h1>
-                            <p class="p-text">Lorem Ipsum dolor sit amet consec</p>
+            <section id="contact">
+                <header id="page-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 m-auto py-5 text-center">
+                                <h1 class="h2-title text-center">Let Us Show You How Good Your Place Can Look!</h1>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </header>
+                </header>
+            </section>
             {/* CONTACT SECTION */}
-            <section id="contact" class="py-3">
+            <section class="py-3">
                 <div class="container">
                     <div class="row p-text">
                         <div class="col-md-4">
@@ -74,8 +75,8 @@ const ContactScreen = () => {
                         </div>
                     </div>
                 </div>
-            </section>
         </section>
+        </div>
     )
 }
 
