@@ -7,14 +7,14 @@ import TrustSection from '../components/TrustSection'
 import TestimonialSection from '../components/TestimonialSection'
 const HomeScreen = () => {
     return (
-        <>
+        <div class="container">
             <Header />
             <FeaturesSection />
             <AboutTeamSection />
             <ServicesSection />
             <TrustSection />
             <TestimonialSection />
-        </>
+        </div>
     )
 }
 

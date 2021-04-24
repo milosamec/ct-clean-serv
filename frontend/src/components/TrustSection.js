@@ -37,12 +37,12 @@ const TrustSection = () => {
             </div>
         </section>
         <div class="row py-5">
-        <section id="trust-section-head">
-            <div class="col py-5 align-items-center">
-                <h2 class="p-4 text-center text-white"><strong>Connecticut Cleaning Service</strong></h2>
-                <h3 class="p-1 text-center text-white">The Name You Can Trust</h3>
-            </div>
-        </section>
+            <section id="trust-section-head">
+                <div class="col py-5 align-items-center">
+                    <h2 class="p-4 text-center text-white"><strong>Connecticut Cleaning Service</strong></h2>
+                    <h3 class="p-1 text-center text-white">The Name You Can Trust</h3>
+                </div>
+            </section>
         </div>
         </>
     )

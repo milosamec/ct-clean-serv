@@ -24,7 +24,7 @@ const Footer = () => {
                             <h3 class="h3-footer-title">Menu</h3>
                             <ul class="list-deco-none">
                                 <li>
-                                    <Link to="/home" className="footer-link p-text" activeClassName="activeLink">Home</Link>
+                                    <Link to="/home" className="footer-link p-text">Home</Link>
                                 </li>
                                 <li>
                                     <Link to="/services" className="footer-link p-text">Services</Link>

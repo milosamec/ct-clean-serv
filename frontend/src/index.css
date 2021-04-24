@@ -51,6 +51,15 @@ body {
   min-height: 400px;
 }
 
+#contact {
+  background: url(./trust-us.jpeg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 200px;
+}
+
 /* Dark overlay over image */
 /* #home-section .dark-overlay {
   position: absolute;
@@ -291,4 +300,12 @@ a.social-links {
 .contact-link:hover {
   color: rgba(233, 233, 233, 0.3);
   transition: border-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.testimonials-align-center {
+  text-align: -webkit-center;
+}
+
+.testimonials-align-left {
+  text-align: -webkit-left;
 }
