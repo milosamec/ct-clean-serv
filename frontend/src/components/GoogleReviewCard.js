@@ -5,7 +5,6 @@ import google from '../google.png'
 import avatar from '../avatar.png'
 
 const GoogleReviewCard = ({reviews}) => {
-    console.log(reviews)
     // const {date, link, reviewerAvatar, reviewerDescription, reviewerName, reviewerRating} = review
     // Review Posted Date //
     let d = new Date()
