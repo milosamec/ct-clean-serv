@@ -8,6 +8,7 @@ import ContactScreen from './Screens/ContactScreen'
 import Footer from './components/Footer'
 
 const App = () => {
+
   return (
     <Router>
       <Navbar />
