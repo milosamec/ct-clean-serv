@@ -7,7 +7,7 @@ import TrustSection from '../components/TrustSection'
 import TestimonialSection from '../components/TestimonialSection'
 const HomeScreen = () => {
     return (
-        <div class="container">
+        <div>
             <Header />
             <FeaturesSection />
             <AboutTeamSection />
