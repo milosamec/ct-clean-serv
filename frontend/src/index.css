@@ -298,7 +298,7 @@ a.social-links {
 }
 
 .contact-link:hover {
-  color: rgba(233, 233, 233, 0.3);
+  color: rgba(107, 107, 107, 0.9);
   transition: border-color 0.15s ease-out, color 0.15s ease-out;
 }
 
