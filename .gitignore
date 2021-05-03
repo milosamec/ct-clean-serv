@@ -15,7 +15,7 @@ node_modules/
 
 
 # misc
-/src/config/config
+/src/config/config.js
 .DS_Store
 .env
 .env.local
