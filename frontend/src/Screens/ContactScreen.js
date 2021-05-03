@@ -3,13 +3,16 @@ import firebase from 'firebase/app'
 import 'firebase/firebase-database'
 
 const ContactScreen = () => {
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        sentOn: '',
     })
+
     const [showAlert, setShowAlert] = useState(false)
 
     const {firstName, lastName, email, phone, message} = formData
@@ -30,11 +33,24 @@ const ContactScreen = () => {
     // onSubmit
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log("name", formData)
         // Send data via redux function here
 
+        // Current Date for form submission
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+        ];
+        const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+        "Saturday"];
+        let date = new Date()
+        let year = date.getFullYear()
+        let month = date.getMonth()
+        let day = date.getDay()
+        var time = date.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true});
+
+        let dateString = `${time}, ${dayNames[day]}, ${monthNames[month]} ${day}, ${year}`
+
         // Save message
-        saveMessage(formData)
+        saveMessage({...formData, sentOn: dateString})
         setShowAlert(true)
     }
 
