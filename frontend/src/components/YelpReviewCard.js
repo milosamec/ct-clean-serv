@@ -7,7 +7,6 @@ import avatar from '../avatar.png'
 const YelpReviewCard = ({review}) => {
     // const {date, link, reviewerAvatar, reviewerDescription, reviewerName, reviewerRating} = review
     // Review Posted Date //
-    console.log(review)
     let d = new Date()
     return (
         <>                
