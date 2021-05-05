@@ -4,24 +4,24 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
-        <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
-            <div class="container">
-                <a href="#home" class="navbar-brand">Cleaning Service</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span><i class="fas fa-bars toggle-icon"></i></span>
+        <nav className="navbar navbar-expand-sm bg-white navbar-light fixed-top">
+            <div className="container">
+                <a href="#home" className="navbar-brand">Cleaning Service</a>
+                <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span><i className="fas fa-bars toggle-icon"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                <div className="collapse navbar-collapse" id="navbarCollapse">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
                             <Link to="/" className="nav-link">Home</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/services" className="nav-link">Services</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/testimonials" className="nav-link">Testimonials</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/contact" className="nav-link">Contact</Link>
                         </li>
                     </ul>

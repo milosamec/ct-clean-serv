@@ -72,75 +72,75 @@ const ContactScreen = () => {
             {/* PAGE HEADER */}
             <section id="contact">
                 <header id="page-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 m-auto py-5 text-center">
-                                <h1 class="h2-title text-center">Let Us Show You How Good Your Place Can Look!</h1>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-6 m-auto py-5 text-center">
+                                <h1 className="h2-title text-center">Let Us Show You How Good Your Place Can Look!</h1>
                             </div>
                         </div>
                     </div>
                 </header>
             </section>
             {/* CONTACT SECTION */}
-            <section class="py-3">
-                <div class="container">
-                    <div class="row p-text">
-                        <div class="col-md-4">
-                            <div class="card p-4">
-                                <div class="card-body">
+            <section className="py-3">
+                <div className="container">
+                    <div className="row p-text">
+                        <div className="col-md-4">
+                            <div className="card p-4">
+                                <div className="card-body">
                                     <h4>Get In Touch</h4>
                                     <p>If you require additional information please contact us and our staff of qualified professionals will be happy to assist you. If using the form to reach us, please expect a response within 24 hours. Thank you.</p>
                                     <h4>Address</h4>
                                     <p>67 Hospital Ave, Ste B St, Danbury CT, 06810</p>
                                     <h4>Email</h4>
-                                    <a class="contact-link" href="mailto:connecticutcleaningservices@gmail.com">connecticutcleaningservices@gmail.com</a>
+                                    <a className="contact-link" href="mailto:connecticutcleaningservices@gmail.com">connecticutcleaningservices@gmail.com</a>
                                     <h4>Phone</h4>
-                                    <a class="contact-link" href="tel:475-439-6043">(475) 439 6043</a>
+                                    <a className="contact-link" href="tel:475-439-6043">(475) 439 6043</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card p-4">
-                                <div class="card-body">
-                                    <h3 class="text-center">Please fill out this form to contact us</h3>
+                        <div className="col-md-8">
+                            <div className="card p-4">
+                                <div className="card-body">
+                                    <h3 className="text-center">Please fill out this form to contact us</h3>
                                     {showAlert ? 
-                                    <div class="alert bg-success text-white text-center d-block">Your message has been sent!</div>
+                                    <div className="alert bg-success text-white text-center d-block">Your message has been sent!</div>
                                     :
-                                    <div class="alert bg-success text-white text-center d-none">Your message has been sent!</div>
+                                    <div className="alert bg-success text-white text-center d-none">Your message has been sent!</div>
                                     }
-                                    <div class="alert text-center text-white bg-primary d-none">Your message has been sent!</div>
+                                    <div className="alert text-center text-white bg-primary d-none">Your message has been sent!</div>
                                     <hr />
                                     <form className="form" onSubmit={(e) => onSubmit(e)}>
-                                        <div class="row">
-                                            <div class="col-md-6 p-2">
-                                                <div class="form-group">
-                                                    <input type="text" name="firstName" class="form-control" placeholder="First Name" value={firstName} onChange={(e) => onChange(e)}/>
+                                        <div className="row">
+                                            <div className="col-md-6 p-2">
+                                                <div className="form-group">
+                                                    <input type="text" name="firstName" className="form-control" placeholder="First Name" value={firstName} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="form-group">
-                                                    <input type="text" name="lastName" class="form-control" placeholder="Last Name" value={lastName} onChange={(e) => onChange(e)}/>
+                                            <div className="col-md-6 p-2">
+                                                <div className="form-group">
+                                                    <input type="text" name="lastName" className="form-control" placeholder="Last Name" value={lastName} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="form-group">
-                                                    <input type="text" name="email" class="form-control" placeholder="Email" value={email} onChange={(e) => onChange(e)}/>
+                                            <div className="col-md-6 p-2">
+                                                <div className="form-group">
+                                                    <input type="text" name="email" className="form-control" placeholder="Email" value={email} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="form-group">
-                                                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" value={phone} onChange={(e) => onChange(e)}/>
+                                            <div className="col-md-6 p-2">
+                                                <div className="form-group">
+                                                    <input type="text" name="phone" className="form-control" placeholder="Phone Number" value={phone} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 p-2">
-                                                <div class="form-group">
-                                                    <textarea class="form-control" name="message"  placeholder="Message / Service Needed" value={message} onChange={(e) => onChange(e)}/>
+                                        <div className="row">
+                                            <div className="col-md-12 p-2">
+                                                <div className="form-group">
+                                                    <textarea className="form-control" name="message"  placeholder="Message / Service Needed" value={message} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
-                                            <div class="d-grid gap-2">
-                                                <input class="btn btn-blue" type="submit"/>
+                                            <div className="d-grid gap-2">
+                                                <input className="btn btn-blue" type="submit"/>
                                             </div>
                                         </div>
                                     </form>
