@@ -139,9 +139,9 @@ const ContactScreen = () => {
                                                     <textarea className="form-control" name="message"  placeholder="Message / Service Needed" value={message} onChange={(e) => onChange(e)}/>
                                                 </div>
                                             </div>
-                                            <div className="d-grid gap-2">
-                                                <input className="btn btn-blue" type="submit"/>
-                                            </div>
+                                        <div className="d-grid gap-2">
+                                            <input className="btn btn-blue" type="submit"/>
+                                        </div>
                                         </div>
                                     </form>
                                 </div>

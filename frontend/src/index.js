@@ -1,5 +1,7 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
+import store from './store'
 import './index.css';
 import App from './App';
 import firebase from "firebase/app";
@@ -11,8 +13,8 @@ firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 
 ReactDOM.render(
-  <Fragment>
+  <Provider store={store}>
     <App />
-  </Fragment>,
+  </Provider>,
   document.getElementById('root')
 );
