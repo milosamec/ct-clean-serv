@@ -3,7 +3,10 @@ import React from 'react'
 const FeaturesSection = () => {
     return (
         <>
-            <section id="first-section-head"></section>
+            <div className="row py-5">
+                <section id="first-section-head">
+                </section>
+            </div>
             <section id="first-section-body" className="bg-white text-muted py-5">
                 <div className="container">
                     <div className="row">
