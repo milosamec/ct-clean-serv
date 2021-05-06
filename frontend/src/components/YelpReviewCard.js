@@ -13,7 +13,7 @@ const YelpReviewCard = ({review}) => {
             <div className="col-md-4 col-sm-12 pb-5 pb-5">
                 <div className="card">
                     <div className="card-header d-flex p-text">
-                        <img src={review.user.image_url ? review.user.image_url : avatar} alt={review.user.image_url} className="avatar w-25 mt-1" />
+                        <img src={review.user.image_url ? review.user.image_url : avatar} alt={review.user.image_url} className="avatar w-25 mt-1"/>
                         <div className="col testimonial-header-style mt-1 d-flex align-items-start">
                             <h5 className="fw-light fs-5 blue">{review.user.name}</h5>
                             <p className="fw-light fs-6">{<DateUtil date={d}/>}</p>
