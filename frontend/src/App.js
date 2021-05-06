@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-        <main>
+        <main style={{overflowX: "hidden"}}>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route path="/services" component={ServicesScreen} />

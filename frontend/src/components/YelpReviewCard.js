@@ -10,8 +10,8 @@ const YelpReviewCard = ({review}) => {
     let d = new Date()
     return (
         <>                
-            <div className="col pb-5">
-                <div className="card" style={{width: '20rem'}}>
+            <div className="col-md-4 col-sm-12 pb-5 pb-5">
+                <div className="card">
                     <div className="card-header d-flex p-text">
                         <img src={review.user.image_url ? review.user.image_url : avatar} alt={review.user.image_url} className="avatar w-25 mt-1" />
                         <div className="col testimonial-header-style mt-1 d-flex align-items-start">
