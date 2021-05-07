@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import HomeScreen from './Screens/HomeScreen'
@@ -8,9 +8,23 @@ import ContactScreen from './Screens/ContactScreen'
 import Footer from './components/Footer'
 import LoginScreen from './Screens/LoginScreen';
 
+import firebase from "firebase/app";
+import 'firebase/auth'
+import 'firebase/firebase-database'
+import {firebaseConfig} from './config/config'
+
+
+
 const App = () => {
 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig)
+
+  
+  // firebase.analytics();
+
   return (
+    <>
     <Router>
       <Navbar />
         <main style={{overflowX: "hidden"}}>
@@ -24,6 +38,7 @@ const App = () => {
         </main>
       <Footer />
     </Router>
+    </>
   );
 }
 
