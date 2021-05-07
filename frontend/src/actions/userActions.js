@@ -3,24 +3,36 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firebase-database'
 
-// export const login = (username, password) => async (dispatch) => {
-//     try {
-//         dispatch({
-//             type: USER_LOGIN_REQUEST
-//         })
+export const login = (email, password) => async (dispatch) => {
+    try {
+        dispatch({
+            type: USER_LOGIN_REQUEST
+        })
 
-//         const config = {
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         }
+        const response = await firebase.auth().signInWithEmailAndPassword(email, password)
 
+        if (response) {
+            console.log("RESP LOGIN", response)
+        }
 
+        dispatch({
+            type: USER_LOGIN_SUCCESS,
+            payload: response
+        })
 
-//     } catch (error) {
-        
-//     }
-// }
+        localStorage.setItem('userInfo', JSON.stringify(response))
+
+    } catch (error) {
+        switch(error.code) {
+            case 'auth/user-not-found':
+                alert('User does not exist')
+                break
+            case 'auth-invalid-email':
+                alert('Please enter an email address')
+        }
+    }
+}
+
 
 export const register = (email, password) => async (dispatch) => {
     console.log("REGISTER")
@@ -35,6 +47,8 @@ export const register = (email, password) => async (dispatch) => {
             console.log("RESp", response)
             await firebase.database().ref('/users').child(response.user.uid).set({email: response.user.email, uid: response.user.uid})
         }
+
+        
         dispatch({
             type: USER_REGISTER_SUCCESS,
             payload: response

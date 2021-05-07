@@ -1,27 +1,31 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { login } from '../actions/userActions'
+import {useDispatch, useSelector} from 'react-redux'
+import {register} from '../actions/userActions'
 
-const LoginScreen = ({ location, history }) => {
+
+const RegisterScreen = ({ location, history }) => {
+
+    console.log("location", location)
+    console.log("history", history)
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const dispatch = useDispatch()
 
-
-    const userLogin = useSelector(state => state.userLogin)
-    const {loading, error, userInfo} = userLogin
+    const userRegister = useSelector(state => state.userRegister)
+    const {loading, error, userInfo} = userRegister
+    console.log("USERINFO", userInfo)
 
     useEffect(() => {
         if (userInfo) {
-            history.push('/admin06810/dashboard')
+            history.push('/dashboard')
         }
     }, [history, userInfo])
 
     const submitHandler = (e) => {
         e.preventDefault()
-        dispatch(login(email, password))
+        dispatch(register(email, password))
         setEmail('')
         setPassword('')
     }
@@ -30,7 +34,7 @@ const LoginScreen = ({ location, history }) => {
         <div id="section-admin">
             <div className="container mb-5">
                 <div className="row">
-                    <h1 className="fs-1 text-center h2-title">Sign In</h1>
+                    <h1 className="fs-1 text-center h2-title">Sign Up</h1>
                 </div>
                 <div className="row">
                     <form onSubmit={submitHandler}>
@@ -52,4 +56,4 @@ const LoginScreen = ({ location, history }) => {
     )
 }
 
-export default LoginScreen
+export default RegisterScreen
