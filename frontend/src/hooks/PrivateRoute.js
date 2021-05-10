@@ -2,23 +2,25 @@ import React, {useEffect} from 'react'
 import {Route, Redirect, useHistory} from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { USER_LOGIN_SUCCESS } from '../constants/userConstants'
+import firebase from "firebase/app";
+import "firebase/auth";
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
-    let history = useHistory()
-    const {auth} = rest
 
     const dispatch = useDispatch()
 
     const userLogin = useSelector(state => state.userLogin)
-    const {userInfo} = userLogin
-
+    const {loading, userInfo} = userLogin
 
     useEffect(() => {
-        auth.onAuthStateChanged(authUser => {
-            dispatch({
-                type: USER_LOGIN_SUCCESS,
-                payload: authUser
-            })
+        firebase.auth().onAuthStateChanged(authUser => {
+                if(authUser) {
+                    dispatch({
+                        type: USER_LOGIN_SUCCESS,
+                        payload: authUser
+                    })
+                // }
+                }
           });
     }, [])
 

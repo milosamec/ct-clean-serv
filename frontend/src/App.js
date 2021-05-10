@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import RegisterScreen from './Screens/RegisterScreen';
 import LoginScreen from './Screens/LoginScreen'
 import DashboardScreen from './Screens/DashboardScreen'
+import MessageListScreen from './Screens/MessageListScreen'
 
 import firebase from "firebase/app";
 import 'firebase/auth'
@@ -22,7 +23,6 @@ const App = () => {
 
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig)
-  const auth = app.auth()
   
   // firebase.analytics();
 
@@ -38,7 +38,8 @@ const App = () => {
             <Route path="/contact" component={ContactScreen}/>
             <Route path="/admin06810/register" component={RegisterScreen}/>
             <Route path="/admin06810/login" component={LoginScreen}/>
-            <PrivateRoute path="/admin06810/dashboard" auth={auth} component={DashboardScreen} />
+            <PrivateRoute path="/admin06810/dashboard" component={DashboardScreen} />
+            <PrivateRoute path="/admin06810/inbox" component={MessageListScreen} />
           </Switch>
         </main>
       <Footer />

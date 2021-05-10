@@ -1,4 +1,5 @@
 import { USER_LOGIN_REQUEST, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL, USER_LOGOUT, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS, USER_REGISTER_FAIL } from '../constants/userConstants'
+import { MESSAGE_LIST_RESET } from '../constants/messageConstants'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firebase-database'
@@ -10,10 +11,6 @@ export const login = (email, password) => async (dispatch) => {
         })
 
         const response = await firebase.auth().signInWithEmailAndPassword(email, password)
-
-        if (response) {
-            console.log("RESP LOGIN", response)
-        }
 
         dispatch({
             type: USER_LOGIN_SUCCESS,
@@ -32,6 +29,8 @@ export const login = (email, password) => async (dispatch) => {
         }
     }
 }
+
+
 
 
 export const register = (email, password) => async (dispatch) => {
@@ -67,4 +66,11 @@ export const register = (email, password) => async (dispatch) => {
             payload: error.response && error.response.data.message ? error.response.data.message : error.message
         })
     }
+}
+
+export const logout = () => (dispatch) => {
+    firebase.auth().signOut()
+    localStorage.removeItem('userInfo')
+    dispatch({ type: USER_LOGOUT })
+    dispatch({ type: MESSAGE_LIST_RESET })
 }
