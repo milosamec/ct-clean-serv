@@ -6,7 +6,7 @@ import { userRegisterReducer, userLoginReducer } from './reducers/userReducers'
 
 const reducer = combineReducers({
     messageList: messageListReducer,
-    userRegister: userRegisterReducer,
+    // userRegister: userRegisterReducer,
     userLogin: userLoginReducer
 })
 

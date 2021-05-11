@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {register} from '../actions/userActions'
+// import {register} from '../actions/userActions'
 
 
 const RegisterScreen = ({ location, history }) => {
-
-    console.log("location", location)
-    console.log("history", history)
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -15,7 +12,6 @@ const RegisterScreen = ({ location, history }) => {
 
     const userRegister = useSelector(state => state.userRegister)
     const {loading, error, userInfo} = userRegister
-    console.log("USERINFO", userInfo)
 
     useEffect(() => {
         if (userInfo) {
@@ -25,7 +21,7 @@ const RegisterScreen = ({ location, history }) => {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        dispatch(register(email, password))
+        // dispatch(register(email, password))
         setEmail('')
         setPassword('')
     }

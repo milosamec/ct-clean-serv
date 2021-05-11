@@ -1,9 +1,7 @@
-import React from 'react'
-import {useDispatch, useSelector} from 'react-redux'
+import React, {useEffect} from 'react'
 
-const DashboardScreen = () => {
+const DashboardScreen = ({history}) => {
 
-    
 
     return (
         <div className="container">

@@ -33,40 +33,40 @@ export const login = (email, password) => async (dispatch) => {
 
 
 
-export const register = (email, password) => async (dispatch) => {
-    console.log("REGISTER")
-    try {
-        dispatch({
-            type: USER_REGISTER_REQUEST
-        })
+// export const register = (email, password) => async (dispatch) => {
+//     console.log("REGISTER")
+//     try {
+//         dispatch({
+//             type: USER_REGISTER_REQUEST
+//         })
 
 
-        const response = await firebase.auth().createUserWithEmailAndPassword(email, password)
-        if (response) {
-            console.log("RESp", response)
-            await firebase.database().ref('/users').child(response.user.uid).set({email: response.user.email, uid: response.user.uid})
-        }
+//         const response = await firebase.auth().createUserWithEmailAndPassword(email, password)
+//         if (response) {
+//             console.log("RESp", response)
+//             await firebase.database().ref('/users').child(response.user.uid).set({email: response.user.email, uid: response.user.uid})
+//         }
 
         
-        dispatch({
-            type: USER_REGISTER_SUCCESS,
-            payload: response
-        })
+//         dispatch({
+//             type: USER_REGISTER_SUCCESS,
+//             payload: response
+//         })
 
-        dispatch({
-            type: USER_LOGIN_SUCCESS,
-            payload: response
-        })
+//         dispatch({
+//             type: USER_LOGIN_SUCCESS,
+//             payload: response
+//         })
         
-        localStorage.setItem('userInfo', JSON.stringify(response))
+//         localStorage.setItem('userInfo', JSON.stringify(response))
 
-    } catch (error) {
-        dispatch({
-            type: USER_LOGIN_FAIL,
-            payload: error.response && error.response.data.message ? error.response.data.message : error.message
-        })
-    }
-}
+//     } catch (error) {
+//         dispatch({
+//             type: USER_LOGIN_FAIL,
+//             payload: error.response && error.response.data.message ? error.response.data.message : error.message
+//         })
+//     }
+// }
 
 export const logout = () => (dispatch) => {
     firebase.auth().signOut()
