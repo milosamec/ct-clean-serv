@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
+import {useDispatch} from 'react-redux'
 import firebase from 'firebase/app'
 import 'firebase/firebase-database'
-
+import {saveMessage} from '../actions/messageActions'
 const ContactScreen = () => {
+
+    const dispatch = useDispatch()
+
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -17,14 +21,6 @@ const ContactScreen = () => {
 
     const {firstName, lastName, email, phone, message} = formData
 
-        // Reference for messages table
-        let messagesRef = firebase.database().ref('messages')
-
-        // Save message to firebase
-        let saveMessage = (formData) => {
-            let newMessageRef = messagesRef.push();
-            newMessageRef.set(formData)
-        }
 
     // OnChange
     const onChange = (e) => {
@@ -47,10 +43,10 @@ const ContactScreen = () => {
         let day = date.getDay()
         var time = date.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true});
 
-        let dateString = `${time}, ${dayNames[day]}, ${monthNames[month]} ${day}, ${year}`
+        let dateString = `${time}, ${dayNames[day]} ${monthNames[month]} ${day}, ${year}`
 
         // Save message
-        saveMessage({...formData, sentOn: dateString})
+        dispatch(saveMessage({...formData, sentOn: dateString}))
         setShowAlert(true)
     }
 

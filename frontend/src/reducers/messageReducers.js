@@ -19,3 +19,16 @@ export const messageListReducer = (state = {messages: []}, action) => {
             return state
     }
 }
+
+export const messageSaveReducer = (state = {}, action) => {
+    switch(action.type) {
+        case 'MESSAGE_SAVE_REQUEST':
+            return { loading: true, messages: [] }
+        case 'MESSAGE_SAVE_SUCCESS':
+            return { loading: false, messages: action.payload}
+        case 'MESSAGE_SAVE_FAIL':
+            return { loading: false, error: action.payload }
+        default:
+            return state
+    }
+}

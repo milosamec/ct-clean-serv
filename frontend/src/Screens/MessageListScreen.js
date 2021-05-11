@@ -9,7 +9,6 @@ const MessageListScreen = ({history}) => {
 
     const messageList = useSelector(state => state.messageList)
     const {loading, messages} = messageList
-
     
     const userLogin = useSelector(state => state.userLogin)
     const {userInfo} = userLogin
@@ -43,7 +42,7 @@ const MessageListScreen = ({history}) => {
                     {/* {messages && messages.length <= 0 ? <tr scope="row"><td>No Messages</td></tr> : messages.map((row, index) => {
                         return <tr key={index}><th scope="row" key={index}>{row.sentOn}</th><td>{row.firstName}</td><td>{row.phone}</td><td>{row.message}</td></tr>
                     })} */}
-                    {tabledata}
+                    {loading ? <tr scope="row">Loading...</tr> : messages.length == 0 ? <tr scope="row">No Messages</tr> : tabledata}
                 </tbody>
                 </table>
             </div>
