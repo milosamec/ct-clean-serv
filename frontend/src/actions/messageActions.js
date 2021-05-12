@@ -7,7 +7,6 @@ import {snapshotToArray} from '../hooks/firebaseHelpers'
 
 export const saveMessage = (message) => async (dispatch) => {
     try {
-        console.log("MESG", message)
         dispatch({ type: MESSAGE_SAVE_REQUEST })
 
         // Reference for messages table & SAVE

@@ -2,25 +2,33 @@ import React, {useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {getMessages} from '../actions/messageActions'
+import { MESSAGE_SAVE_RESET } from '../constants/messageConstants'
 
 const MessageListScreen = ({history}) => {
 
     const dispatch = useDispatch()
 
+    
     const messageList = useSelector(state => state.messageList)
     const {loading, messages} = messageList
     
+    const messageSave = useSelector(state => state.messageSave)
+    const {success: success} = messageSave
+
     const userLogin = useSelector(state => state.userLogin)
     const {userInfo} = userLogin
 
     useEffect(() => {
-        if(userInfo) {
-            dispatch(getMessages())
-        } else {
+        if(!userInfo) {
             history.push('/admin06810/login')
         }
-    },[dispatch, history, userInfo])
-    
+        console.log("SUCCESS", success)
+        if(userInfo || success) {
+            dispatch(getMessages())
+        }
+
+    },[dispatch, history, userInfo, success])
+    console.log("SUCCESS TWO", success)
     const tabledata = messages.map((row, index) => {
         return <tr key={index}><th scope="row" key={index}>{row.sentOn}</th><td>{row.firstName}</td><td>{row.phone}</td><td>{row.message}</td></tr>
     })
